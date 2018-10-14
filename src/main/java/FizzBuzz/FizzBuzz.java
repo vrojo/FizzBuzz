@@ -1,17 +1,17 @@
 package FizzBuzz;
 
 public class FizzBuzz {
-    public static String fizzBuzz(int i) {
-        if (i%3==0 && i%5==0){
-            return "" + "FizzBuzz";
-        }
-        if (i%5==0) {
-            return "" + "Buzz";
-        }
-        if (i%3==0) {
-            return "" + "Fizz";
-        }
-        return "" + i;
+    public static String fizzBuzz(int value) {
+        String answer = "";
+        if (value % 3 == 0)
+            answer += "Fizz";
+        if (value % 5 == 0)
+            answer += "Buzz";
+        if (value % 7 == 0)
+            answer += "Quack";
+        if (!answer.equals(""))
+            return answer;
+        return "" + value;
     }
 
     public static void main(String arg[]){
