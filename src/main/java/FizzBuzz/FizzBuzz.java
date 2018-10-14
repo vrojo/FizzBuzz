@@ -1,14 +1,19 @@
 package FizzBuzz;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class FizzBuzz {
     public static String fizzBuzz(int value) {
-        String answer = "";
-        if (isMultiple(value, 3))
-            answer += "Fizz";
-        if (isMultiple(value, 5))
-            answer += "Buzz";
-        if (isMultiple(value, 7))
-            answer += "Quack";
+        Map<Integer, String> multiples = new HashMap<Integer, String>();
+        multiples.put(3, "Fizz");
+        multiples.put(5, "Buzz");
+        multiples.put(7, "Quack");
+        String answer = multiples.entrySet().stream()
+                .filter(e -> isMultiple(value, e.getKey()))
+                .map(Map.Entry::getValue)
+                .collect(Collectors.joining());
         if (!answer.equals(""))
             return answer;
         return "" + value;
