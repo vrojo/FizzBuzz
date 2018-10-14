@@ -13,4 +13,10 @@ public class FizzBuzz {
         }
         return "" + i;
     }
+
+    public static void main(String arg[]){
+        for (int number=1; number<=100; number++){
+            System.out.println(fizzBuzz(number));
+        }
+    }
 }
