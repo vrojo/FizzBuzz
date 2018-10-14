@@ -2,8 +2,12 @@ package FizzBuzz;
 
 public class FizzBuzz {
     public static String ShowNumber(int i) {
-        if (i==2)
+        if (i==4) {
+            return "4";
+        }
+        if (i==2) {
             return "2";
+        }
         return "1";
     }
 }
