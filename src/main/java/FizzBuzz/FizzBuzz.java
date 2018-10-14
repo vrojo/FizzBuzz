@@ -2,6 +2,9 @@ package FizzBuzz;
 
 public class FizzBuzz {
     public static String ShowNumber(int i) {
+        if (i==5){
+            return "Buzz";
+        }
         if (i==4) {
             return "4";
         }
