@@ -3,15 +3,21 @@ package FizzBuzz;
 public class FizzBuzz {
     public static String fizzBuzz(int value) {
         String answer = "";
-        if (value % 3 == 0)
+        if (isMultiple(value, 3))
             answer += "Fizz";
-        if (value % 5 == 0)
+        if (isMultiple(value, 5))
             answer += "Buzz";
-        if (value % 7 == 0)
+        if (isMultiple(value, 7))
             answer += "Quack";
         if (!answer.equals(""))
             return answer;
         return "" + value;
+    }
+
+    private static boolean isMultiple(int value, int multipliedNbr) {
+        if (value % multipliedNbr == 0)
+            return true;
+        return false;
     }
 
     public static void main(String arg[]){
