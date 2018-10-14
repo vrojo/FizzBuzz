@@ -28,4 +28,9 @@ public class FizzBuzzTest {
     public void should_return_corresponding_number5(){
         Assertions.assertThat(FizzBuzz.ShowNumber(5)).isEqualTo("Buzz");
     }
+
+    @Test
+    public void should_return_corresponding_number6(){
+        Assertions.assertThat(FizzBuzz.ShowNumber(6)).isEqualTo("Fizz");
+    }
 }

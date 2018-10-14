@@ -2,14 +2,18 @@ package FizzBuzz;
 
 public class FizzBuzz {
     public static String ShowNumber(int i) {
-        if (i==5){
+        if (i==6) {
+            return "Fizz";
+        }
+        if (i==5) {
             return "Buzz";
         }
         if (i==4) {
             return "4";
         }
-        if (i==3)
+        if (i==3) {
             return "Fizz";
+        }
         if (i==2) {
             return "2";
         }
