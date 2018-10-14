@@ -23,4 +23,9 @@ public class FizzBuzzTest {
     public void should_return_FizzBuzz_when_multiple_of_3_and_5(){
         assertThat(FizzBuzz.fizzBuzz(15)).isEqualTo("FizzBuzz");
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_multiple_of_3_and_5_2(){
+        assertThat(FizzBuzz.fizzBuzz(30)).isEqualTo("FizzBuzz");
+    }
 }
